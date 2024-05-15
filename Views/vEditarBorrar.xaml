@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana6GPaucar.Views.vEditarBorrar"
+                     BackgroundColor="White">
+    <VerticalStackLayout>
+
+        <StackLayout BackgroundColor="LightBlue" Padding="20">
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"
+               HeightRequest="40"/>
+            <Label Text="Consumo de Servicio WEB(Editar y Borrar)"
+               FontSize="20"
+               HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <Entry x:Name="txtProducto" Placeholder="Nombre" TextColor="Black"></Entry>
+        <Entry x:Name="txtCategoria" Placeholder="Apellido" TextColor="Black"></Entry>
+        <Entry x:Name="txtPrecio" Placeholder="Edad" TextColor="Black"></Entry>
+        <Entry x:Name="txtCodigo" Placeholder="Codigo" IsReadOnly="true"></Entry>
+        <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked_1"></Button>
+        <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked"></Button>
+
+
+    </VerticalStackLayout>
+</ContentPage>
